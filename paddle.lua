@@ -18,7 +18,7 @@ end
 function Paddle:getBounceDirection(object)
   local x = (object.x - self.x)/(self.width/2 + object.width)
   local y = 1
-  return object.direction
+  return Vector:new(x, -y)
 end
 
 return Paddle

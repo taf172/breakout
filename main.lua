@@ -121,6 +121,7 @@ function love.update(dt)
       lives = lives - 1
     end
 
+
     -- Play sound
     if playSound then
       playSound:play()
